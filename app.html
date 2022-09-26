@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body onload="onload()">
+    <div class="nav-bar">
+        <p>Matime</p>
+
+    </div>
+<!--content row-->
+        <div class="bodyrow">
+            <div class="side-bar" id="player1">
+                <div class="">
+                    <strong>Home</strong>
+
+                </div>
+                <div class="">
+                    <strong>Library</strong>
+
+                </div>
+                <div class="">
+                   <strong>Create Playlist</strong> 
+
+                </div>
+                <div class="playlist">
+                    <strong>#Playlist 1</strong><br>
+                    <strong>#Playlist 2</strong> <br>
+                    <strong>#Playlist 3</strong>  <br>
+                 </div>
+                 
+                 <div class="thumbnails">
+                    <img src="thumbnail/no wahala.PNG" alt="Music"/>
+
+                 </div>
+
+
+
+                
+                 
+                 
+
+ 
+               
+                
+
+            </div>
+            <div class="song-list">
+                <div  id="song-list">
+
+                </div>
+            </div>
+            <div class="bodycolumn">
+                <div class="image">
+
+                </div>
+            </div>
+
+
+        </div>
+      
+        
+    <!--footer row-->
+    <div class="footerrow">
+        <div class="footercolumn1">
+            
+                <p output  class="songTitle" id="songTitle"></p>
+            
+         
+
+            </div>
+            <div class="footercolumn2 player">
+                <div class="buttons" id="play">
+                    <button id="previous" class="previous" onclick="previous()">Previous</button>
+                    <button id="play" class="next" onclick="playOrPauseSong() "><img class="image" id="playOrPauseSong" src="thumbnail/play.png" alt="play"></button>
+                    <button id="next" class="next" onclick="next()">next</button>
+                    <input class="progress-bar seekBar" type="range" id="seekBar" min="0" max="" value="0" onchange="changeSeekBar()">
+    
+                </div>
+            </div>
+            <div class="footercolumn3">
+               <input class="progress-bar volume" type="range" id="volume" min="0" max="" value="50%" >
+            </div>   
+                 
+    </div>
+    <div class="dev-info">
+        <p class="center">Dveloped By Kirigwi Arnold</p>
+
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
